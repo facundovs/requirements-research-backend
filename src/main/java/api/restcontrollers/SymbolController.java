@@ -16,11 +16,6 @@ public class SymbolController {
     private SymbolRepository repository;
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test() {
-        System.out.println("Holaaaaaaaaaa");
-        repository.save(new Symbol("Prueba","Prueba","Prueba"));
-        repository.save(new Symbol("Prueba2","Prueba2","Prueba2"));
-
-        System.out.println("Data:" + repository.findAll().toString());
         return "Hello World";
     }
 
