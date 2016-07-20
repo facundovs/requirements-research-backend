@@ -1,1 +1,2 @@
-web: java $JAVA_OPTS -jar target/*.jar 
+web: java -Dserver.port=$PORT -jar target/rs-backend-1.0-SNAPSHOT.jar
+
